@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BS v5.2 CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+
+
+    <section class="bai01 style__exercise">
+        <div class="container">
+            <h2>Bài 01</h2>
+            <form>
+                <div class="w-100">
+                    <label for="numberOfWorkingDay" class="form-label">Nhập vào số ngày làm</label>
+                    <input type="email" class="form-control" id="numberOfWorkingDay"
+                        placeholder="Nhập vào số ngày làm việc, chương trình không validate input">
+                    <div id="inputHelp1" class="form-text">Lương 1 ngày: 100.000 VND</div>
+                    <div id="inputHelp2" class="form-text">Công thức tính lương: lương 1 ngày * số ngày làm</div>
+                    <div id="output1" class="form-text p-3 bg-info bg-opacity-10 border border-info">
+                        Lương
+                    </div>
+                </div>
+                <hr class="w-100">
+                <button type="button" id="btnBai01" class="btn btn-primary">Tính lương</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="bai02 style__exercise">
+        <div class="container">
+            <h2>Bài 02</h2>
+            <form>
+                <div class="w-100">
+                    <label for="inputNumber01">Nhập vào 5 số thực</label>
+                    <input type="number" step="0.1" class="form-control" id="inputNumber01"
+                        placeholder="Nhập vào số thực, chương trình không validate input">
+                    <input type="number" step="0.1" class="form-control" id="inputNumber02"
+                        placeholder="Nhập vào số thực, chương trình không validate input">
+                    <input type="number" step="0.1" class="form-control" id="inputNumber03"
+                        placeholder="Nhập vào số thực, chương trình không validate input">
+                    <input type="number" step="0.1" class="form-control" id="inputNumber04"
+                        placeholder="Nhập vào số thực, chương trình không validate input">
+                    <input type="number" step="0.1" class="form-control" id="inputNumber05"
+                        placeholder="Nhập vào số thực, chương trình không validate input">
+
+                    <div id="output2" class="form-text p-3 bg-info bg-opacity-10 border border-info">
+                        Trung Bình:
+                    </div>
+                </div>
+                <hr class="w-100">
+                <button type="button" id="btnBai02" class="btn  btn-primary">Tính Trung Bình</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="bai03 style__exercise">
+        <div class="container">
+            <h2>Bài 03</h2>
+            <form>
+                <div class="w-100">
+                    <label for="inputDollar01">Nhập vào USD, Giá USD hiện nay đang là 23.500 VND</label>
+                    <input type="text" class="form-control" id="inputDollar01"
+                        placeholder="Nhập vào USD, chương trình không validate input">
+                    <!-- <input type="number" step="0.1" class="form-control" id="outputVN02" placeholder=""> -->
+                    <div id="output3" class="form-text p-3 bg-info bg-opacity-10 border border-info">Số tiền: </div>
+                </div>
+                <hr class="w-100">
+                <button type="button" id="btnBai03" class="btn  btn-primary">Quy Đổi USD sang VND</button>
+            </form>
+        </div>
+
+    </section>
+
+    <section class="bai04 style__exercise">
+        <div class="container">
+            <h2>Bài 04</h2>
+            <form>
+                <div class="w-100">
+                    <label for="chieuDai">Nhập chiều dài và chiều rộng của HCN</label>
+                    <input type="text" class="form-control" id="chieuDai"
+                        placeholder="Nhập vào chiều dài, chương trình không validate input">
+                    <input type="text" class="form-control" id="chieuRong"
+                        placeholder="Nhập vào chiều rộng, chương trình không validate input">
+                    <div id="output41" class="form-text p-3 bg-info bg-opacity-10 border border-info">Diện tích: </div>
+                    <div id="output42" class="form-text p-3 bg-info bg-opacity-10 border border-info">Chu vi: </div>
+                </div>
+                <hr class="w-100">
+                <button type="button" id="btnBai04" class="btn  btn-primary">Tính toán</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="bai05 style__exercise">
+        <div class="container">
+            <h2>Bài 05</h2>
+            <form>
+                <div class="w-100">
+                    <label for="inputNumberE5">Nhập vào số có 2 chữ số</label>
+                    <input type="text" class="form-control" id="inputNumberE5"
+                        placeholder="Nhập vào số có 2 chữ số, chương trình không validate input">
+                    <div id="output5" class="form-text p-3 bg-info bg-opacity-10 border border-info">Tổng 2 chữ số: </div>
+                </div>
+                <hr class="w-100">
+                <button type="button" id="btnBai05" class="btn  btn-primary">Tính tổng các chữ số</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- BS v5.2 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+    <script src="./js/bai_01.js"></script>
+    <script src="./js/bai_02.js"></script>
+    <script src="./js/bai_03.js"></script>
+    <script src="./js/bai_04.js"></script>
+    <script src="./js/bai_05.js"></script>
+</body>
+
+</html>
